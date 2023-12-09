@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Food App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar flex">
+        <div class="menu">
+          <input type="checkbox" id="checkbox" />
+          <label class="hamburger" for="checkbox">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </label>
+
+          <ul id="menu-bar" class="menu-bar flex">
+            <li class="menu_link">
+              <a href="#" class="menu_item">Home</a>
+            </li>
+            <li class="menu_link">
+              <a href="#" class="menu_item">Order</a>
+            </li>
+            <li class="menu_link">
+              <a href="#" class="menu_item">Food</a>
+            </li>
+            <li class="menu_link">
+              <a href="#" class="menu_item">Restaurant</a>
+            </li>
+            <li class="menu_link">
+              <a href="#" class="menu_item">Testimonials</a>
+            </li>
+            <li class="menu_link">
+              <a href="#" class="menu_item">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-icons">
+          <ul class="flex social-icons-grp">
+            <li class="social-links">
+              <a href="#" class="social-icons-link"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="featured-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="social-links">
+              <a href="#" class="social-icons-link"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="featured-icon"
+                >
+                  <path
+                    d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--Hero Section-->
+    <main>
+      <section class="hero">
+        <div class="hero-about">
+          <h1 class="heading-primary">Lorem Ipsum</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia
+            placeat dicta est, reiciendis totam ducimus eum cum asperiores!
+            Ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </section>
+      <!--Card Section-->
+      <section class="cards">
+        <h2 class="heading-secondary">Order Now</h2>
+        <div class="box">
+          <div class="box-content flex">
+            <div class="card">
+              <div class="card-img">
+                <img src="/img/burger.png" alt="Burger" />
+              </div>
+              <div class="card-text">
+                <h3 class="heading-tertiary">burger</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Culpa, velit!
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img src="/img/pizza.png" alt="Pizza" />
+              </div>
+              <div class="card-text">
+                <h3 class="heading-tertiary">Pizza</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Culpa, velit!
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img src="/img/pasta.png" alt="Pasta" />
+              </div>
+              <div class="card-text">
+                <h3 class="heading-tertiary">Pasta</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Culpa, velit!
+                </p>
+              </div>
+            </div>
+          </div>
+          <button>Order</button>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
