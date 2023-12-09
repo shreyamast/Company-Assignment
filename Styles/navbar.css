@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 60px;
+    padding: 0 20px;
+    position: sticky;
+    top: 0.1px;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    letter-spacing: 4px;
+}
+
+nav .logo {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+
+nav input {
+    display: none;
+}
+
+nav label.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 48px;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav ul.menu li {
+    margin: 0 10px;
+}
+
+nav ul.menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    nav label.menu-icon {
+        display: block;
+    }
+
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        gap: 0;
+    }
+
+    nav .logo {
+        font-size: 25px;
+    }
+
+    nav ul.menu li {
+        margin: 10px 0;
+    }
+
+    nav input:checked~ul.menu {
+        display: flex;
+    }
+}
