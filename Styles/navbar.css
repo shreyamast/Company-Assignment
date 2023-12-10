@@ -14,7 +14,7 @@ nav {
     position: sticky;
     top: 0.1px;
     z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
     letter-spacing: 4px;
 }
 
@@ -54,6 +54,10 @@ nav ul.menu li a {
     text-decoration: none;
 }
 
+li:hover{
+cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
     nav label.menu-icon {
         display: block;
@@ -82,4 +86,5 @@ nav ul.menu li a {
     nav input:checked~ul.menu {
         display: flex;
     }
+    
 }
