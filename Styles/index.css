@@ -66,7 +66,7 @@
   background: linear-gradient(to right, rgb(255, 104, 194), rgb(255, 218, 92));
 }
 
-#container {
+.container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 90%;
@@ -75,7 +75,7 @@
   letter-spacing: 1px;
 }
 
-#container>div {
+.container>div {
   width: 270px;
   height: 350px;
   margin: auto;
@@ -83,7 +83,7 @@
   border-radius: 0 50px;
 }
 
-#container>div>div {
+.container>div>div {
   height: 60%;
   margin: 18px;
   border-radius: 0 50px 0 0;
@@ -91,7 +91,7 @@
   object-fit: contain;
 }
 
-#container>div>div>img {
+.container>div>div>img {
   width: 100%;
   height: 100%;
 }
@@ -114,10 +114,10 @@ h2 {
 }
 
 @media all and (min-width:0px) and (max-width:286px) {
-    #container>div {
+    .container>div {
        width: 70%;
     }
-    #container>div>p{
+    .container>div>p{
         font-size: 11px;
     }
   }
@@ -142,7 +142,7 @@ h2 {
         margin-top: 1%;
     }
   
-    #container {
+    .container {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
@@ -173,19 +173,20 @@ h2 {
   }
 
   #lorem h1 {
-      font-size: 30px;
+      font-size: 15px;
   }
 
   #lorem p {
       width: 100%;
-      line-height: 18px;
+      font-size: 8px;
+      line-height: 11px;
   }
 
   #order {
       margin-top: 3%;
   }
 
-  #container {
+  .container {
       grid-template-columns: repeat(1, 1fr);
       gap: 30px;
   }
@@ -193,6 +194,29 @@ h2 {
   #order>div>button {
       margin-bottom: 25%;
   }
+
+  #home_image {
+    height: 300px;
+    overflow: hidden;
+    object-fit: contain;}
+
+   #order>h1{
+      font-size: 30px;
+      padding-top: 10px;
+    }
+
+    #photo{
+        height: 280px;
+        width: 220px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    p{
+        font-size: 10px;  
+    }
 }
 
 /* For Medium Screen (For Tablet)*/
@@ -204,19 +228,19 @@ h2 {
     }
   
     #lorem h1 {
-        font-size: 40px;
+        font-size: 20px;
     }
   
     #lorem p {
-        width: 80%;
-        line-height: 22px;
+        font-size: 10px;
+        line-height: 18px;
     }
   
     #order {
         margin-top: 2%;
     }
   
-    #container {
+    .container {
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
@@ -224,6 +248,11 @@ h2 {
     #order>div>button {
         margin-bottom: 17%;
     }
+
+    #home_image {
+        height: 300px;
+        overflow: hidden;
+        object-fit: contain;}
   }
   
   @media all and (min-width: 769px) and (max-width:1023px) {
@@ -238,14 +267,14 @@ h2 {
   
     #lorem p {
         width: 70%;
-        line-height: 26px;
+        /* line-height: 26px; */
     }
   
     #order {
         margin-top: 1%;
     }
   
-    #container {
+    .container {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
