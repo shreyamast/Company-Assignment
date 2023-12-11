@@ -113,6 +113,10 @@ h2 {
   margin-bottom: 5%;
 }
 
+.menu_item:hover{
+color: rgb(2, 148, 2);
+}
+
 @media all and (min-width:0px) and (max-width:286px) {
     .container>div {
        width: 70%;
