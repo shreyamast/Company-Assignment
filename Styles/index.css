@@ -276,7 +276,7 @@ color: rgb(2, 148, 2);
         object-fit: contain;}
   }
   
-  @media all and (min-width: 769px) and (max-width:1023px) {
+  /* @media all and (min-width: 769px) and (max-width:1023px) {
     #lorem {
         padding: 20px;
         width: 60%;
@@ -288,7 +288,7 @@ color: rgb(2, 148, 2);
   
     #lorem p {
         width: 70%;
-        /* line-height: 26px; */
+       
     }
   
     #order {
@@ -314,5 +314,49 @@ color: rgb(2, 148, 2);
     #order{
         width: 990px;
     }
-  }
+  } */
   
+ 
+  @media all and (min-width: 769px) and (max-width:1042px) {
+    #lorem {
+        padding: 20px;
+        width: 60%;
+    }
+  
+    #lorem h1 {
+        font-size: 50px;
+    }
+  
+    #lorem p {
+        width: 70%;
+       
+    }
+  
+    #order {
+        margin-top: 1%;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+  
+  
+    #order>div>button {
+        margin-bottom: 12%;
+    }
+
+    #home_image {
+        width: 1045px;
+        overflow: hidden;
+        object-fit: contain;}
+    
+
+        #div{
+            width: 1045px;
+        }
+        #order{
+            width: 1045px;
+        }
+        
+  } 
